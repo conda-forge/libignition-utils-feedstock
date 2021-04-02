@@ -15,7 +15,7 @@ source:
       - 19.patch
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage(name, max_pin='x') }}
 
@@ -29,6 +29,8 @@ requirements:
     - pkg-config
   host:
     - libignition-cmake2
+    - cli11
+  run:
     - cli11
 
 test:
