@@ -16,4 +16,6 @@ cmake ${CMAKE_ARGS} \
 
 cmake --build . --config Release --parallel ${CPU_COUNT}
 cmake --build . --config Release --parallel ${CPU_COUNT} --target install
+if [[ "${CONDA_BUILD_CROSS_COMPILATION}" != "1" ]]; then
 ctest --output-on-failure -C Release
+fi
