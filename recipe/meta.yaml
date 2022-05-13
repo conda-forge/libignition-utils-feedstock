@@ -28,9 +28,9 @@ requirements:
     - pkg-config
   host:
     - libignition-cmake2
-    - cli11 2.0
+    - cli11 1.9
   run:
-    - cli11 2.0
+    - cli11 1.9
 
 test:
   commands:
