@@ -1,6 +1,6 @@
 {% set component_name = "utils" %}
 {% set base_name = "libignition-" + component_name %}
-{% set version = "1_1.2.0" %}
+{% set version = "1_1.4.0" %}
 {% set version_clean = version.split('_')[1] %}
 {% set major_version = version_clean.split('.')[0] %}
 {% set name = base_name + major_version %}
@@ -11,7 +11,9 @@ package:
 
 source:
   - url: https://github.com/ignitionrobotics/ign-{{ component_name }}/archive/ignition-{{ component_name }}{{ version }}.tar.gz
-    sha256: fba9d1d3cdafa73148697433bba206aa1251d24c0afa22f09bb3289092021449
+    sha256: 74ba40f8a35f9ae07102402d4acde11e4f9a1d52663a339388fe086527093f86
+    patches:
+      - 60.patch
 
 build:
   number: 0
