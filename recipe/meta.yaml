@@ -1,6 +1,6 @@
 {% set component_name = "utils" %}
 {% set base_name = "libignition-" + component_name %}
-{% set version = "1_1.2.0" %}
+{% set version = "1_1.4.0" %}
 {% set version_clean = version.split('_')[1] %}
 {% set major_version = version_clean.split('.')[0] %}
 {% set name = base_name + major_version %}
